@@ -1,0 +1,127 @@
+
+/*All devices and mobile phone*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-family: 'Karla', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	position: relative;
+}
+/*-----------------------logo----------*/
+.logo {
+	flex: 0 0 auto;
+	padding: 1em 1em;
+}
+.logo>img {
+	width: 11em; 
+}
+
+/*-----------------------bars----------*/
+.bars {
+	flex: 0 0 auto;
+	margin-right: 2em;
+}
+.bars i {
+	font-size: 1.3em;
+	margin-top: 1em;
+}
+
+/*--------------------------nav----------*/
+.nav {
+	flex: 0 0 100%;
+	background-color: #053F59;
+	display: none;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+.nav>li {
+	padding: 0.5em;
+}
+.nav>li>a{
+	display: inline-block;
+	position: relative;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+	/*margin: 1em 2em;*/
+	font-size: 20px;
+}
+.nav>li>a:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	border-bottom: 2px solid #F9E1CF;
+	transition: 0.3s all ease-in-out;
+}
+.nav>li>a:hover{
+	color: #F9E1CF;
+}
+
+.nav>li>a:hover:before{
+	color: #F9E1CF;
+	width: 100%;
+}
+
+/*------------------------ Section 1 ----------*/
+
+.banner {
+	padding: 14em 0 12em 0;
+	background-image: url(img/banner.jpg);
+	background-size: cover;
+	background-position: unset;
+	background-repeat: ;
+	text-align: center;
+}
+.banner>.content>h1,p {
+	color: #fff;
+}
+.banner>.content>h1 {
+	margin: 1em 0em;
+}
+
+
+
+
+
+
+
+
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : 40em) {
+}
+
+
+
+/*for small tablet - exclusive - use with care*/
+
+@media only screen and (min-width : 40em) and (max-width : 59.99999em) {
+}
+
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+}
