@@ -1,7 +1,16 @@
 $(document).ready(function(){
   $('.home-banner-slick').slick({
-  	arrows: false,
+  	arrows: true,
   	autoplay: false,
-  	autoplaySpeed: 2000,
+  	responsive:[
+  	{
+  		breakpoint: 960,
+  		settings:{
+  			arrows: false,
+  			autoplay: true,
+  			autoplaySpeed: 2000,
+  		}
+  	}
+  	]
   });
 });

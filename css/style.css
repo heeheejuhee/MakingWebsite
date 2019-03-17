@@ -84,7 +84,7 @@ header {
 	background-size: cover;
 	background-position: unset;
 	background-repeat: no-repeat;
-	padding: 14em 0 12em 0;
+	padding: 8em 0;
 }
 .banner .content.content-1 {
 	background-image: url(../img/banner.jpg);
@@ -103,7 +103,19 @@ header {
 }
 
 
-
+.slick-arrow {
+	z-index: 1;
+	width: auto !important;
+}
+.slick-arrow:before {
+	font-size: 45px;
+}
+.slick-arrow.slick-prev {
+	left: 10px;
+}
+.slick-arrow.slick-next {
+	right: 10px;
+}
 
 
 
@@ -111,27 +123,31 @@ header {
 
 
 /*for small tablet - inclusive*/
+/*640px*/
 
 @media only screen and (min-width : 40em) {
+	.banner .content {
+		padding: 10em 0;
+	}
 }
 
 
-
-/*for small tablet - exclusive - use with care*/
-
-@media only screen and (min-width : 40em) and (max-width : 59.99999em) {
-}
 
 
 
 /*for tablet - inclusive*/
-
+/*960px*/
 @media only screen and (min-width : 60em) {
+
 }
 
 
 
 /*for destop - inclusive*/
-
+/*1280px*/
 @media only screen and (min-width : 80em) {
+
+	.banner .content {
+		padding: 14em 0 12em 0;
+	}
 }
