@@ -78,12 +78,22 @@ header {
 /*------------------------ Section 1 ----------*/
 
 .banner {
-	padding: 14em 0 12em 0;
-	background-image: url(img/banner.jpg);
+	text-align: center;
+}
+.banner .content {
 	background-size: cover;
 	background-position: unset;
-	background-repeat: ;
-	text-align: center;
+	background-repeat: no-repeat;
+	padding: 14em 0 12em 0;
+}
+.banner .content.content-1 {
+	background-image: url(../img/banner.jpg);
+}
+.banner .content.content-2 {
+	background-image: url(../img/banner2.jpg);
+}
+.banner .content.content-3 {
+	background-image: url(../img/banner3.jpg);
 }
 .banner>.content>h1,p {
 	color: #fff;
