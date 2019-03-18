@@ -43,6 +43,7 @@ header {
 	left: 0;
 	width: 100%;
 	position: absolute;
+	z-index: 100;
 }
 .nav>li {
 	padding: 0.5em;
@@ -84,8 +85,19 @@ header {
 	background-size: cover;
 	background-position: unset;
 	background-repeat: no-repeat;
-	padding: 8em 0;
+	/*padding: 8em 0em;*/
+	box-sizing: border-box;
+	height: 20em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.banner .content>div{
+	flex: 0 0 80%;
+	/*border:1px red solid;*/
+}
+
 .banner .content.content-1 {
 	background-image: url(../img/banner.jpg);
 }
@@ -95,13 +107,19 @@ header {
 .banner .content.content-3 {
 	background-image: url(../img/banner3.jpg);
 }
-.banner>.content>h1,p {
+.banner .content h1,
+.banner .content p {
 	color: #fff;
 }
-.banner>.content>h1 {
+.banner .content h1 {
 	margin: 1em 0em;
+	font-size: 2em;
+}
+.banner .content p {
+	font-size: 1em;
 }
 
+/*------------------------ Arrows ----------*/
 
 .slick-arrow {
 	z-index: 1;
@@ -117,9 +135,87 @@ header {
 	right: 10px;
 }
 
+/*------------------------ GetStarted ----------*/
+.actions {
+	margin-top: 2em;
+	display: inline-block;
+	background-color: red;
+
+}
+.button {
+	background-color: #fff;
+	padding: 2px;
+	border-radius: 5px;
+}
+.content a {
+	text-decoration: none;
+	padding: 10px;
+	color: #053F59;
+	background-color: #F9E1CF;
+	font-size: 16px;
+	font-weight: bold;
+}
+.content a:hover {
+	text-decoration: none;
+	padding: 10px;
+	color: #F9E1CF;
+	background-color: #053F59;
+	font-size: 16px;
+	font-weight: bold;
+}
 
 
+/*------------------------ Section 2 ----------*/
 
+.wrapper {
+	padding: 3em 0 1em 0;
+}
+.wrapper .inner {
+	margin-bottom: 2em
+}
+.wrapper .inner .flex-item {
+	flex-direction: column;
+    text-align: center;
+}    
+
+.wrapper .inner .flex-item h3 {
+	color: #053F59;
+	font-weight: bolder;
+	font-size: 1.5em;
+	display: inline-block;
+	position: relative;
+	line-height: 1.2em;
+	text-decoration: none;
+}
+.wrapper .inner .flex-item h3:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	border-bottom: 2px solid #053F59;
+	transition: 0.3s all ease-in-out;
+}
+.wrapper .inner .flex-item h3:hover:before{
+	color: #F9E1CF;
+	width: 100%;
+}
+.wrapper .inner .flex-item p {
+	margin-bottom: 2em;
+	box-sizing: border-box;
+	padding:0.3em 2em;
+	/*flex: 0 0 50%;*/
+}    
+.image img {
+    /*display: block;*/
+    max-width: 260px;
+    width: 100%;
+    border-radius: 100%;
+}
+.image {
+	padding-bottom: 2em;
+}
 
 
 /*for small tablet - inclusive*/
@@ -127,7 +223,7 @@ header {
 
 @media only screen and (min-width : 40em) {
 	.banner .content {
-		padding: 10em 0;
+		/*padding: 10em 0;*/
 	}
 }
 
