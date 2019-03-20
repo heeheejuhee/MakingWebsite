@@ -268,7 +268,7 @@ header {
     margin-bottom: 2em;
     width: 30em;
     height: 25em;
-    margin: auto;  
+    margin: 1em auto;  
 }
 
 .work-img img{
@@ -410,6 +410,7 @@ header {
    		margin: auto;
    		flex-flow: row nowrap;
    		display: flex;
+   		justify-content: center;
 	}
 	.box {
    	 border-radius: 4px;
